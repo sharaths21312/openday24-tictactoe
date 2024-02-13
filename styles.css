@@ -1,0 +1,14 @@
+
+#ttt-table {
+    border-collapse: collapse;
+    border-style: hidden;
+}
+.game-cell {
+    width: 50px;
+    height: 50px;
+    font-size: xx-large;
+    text-align: center;
+    font-family: sans-serif;
+    border: 2px solid black;
+    content: "asda";
+}
