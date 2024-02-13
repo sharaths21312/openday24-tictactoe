@@ -8,10 +8,11 @@
 </head>
 <body>
     <div id="main-grid">
+        <div id="win-indicator">Game in progress</div>
         <table id="ttt-table">
             <tr id="game-row-1">
-                <td id="game-cell-1" class="game-cell">X</td>
-                <td id="game-cell-2" class="game-cell">O</td>
+                <td id="game-cell-1" class="game-cell"></td>
+                <td id="game-cell-2" class="game-cell"></td>
                 <td id="game-cell-3" class="game-cell"></td>
                 <td id="game-cell-4" class="game-cell"></td>
             </tr>
@@ -34,6 +35,7 @@
                 <td id="game-cell-16" class="game-cell"></td>
             </tr>
         </table>
+        <button id="reset-button" onclick="reset_game(state)">Reset</button>
     </div>
     <script src="index.js"></script>
 </body>

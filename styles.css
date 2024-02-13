@@ -1,7 +1,25 @@
 
+#main-grid {
+    width: fit-content;
+    display: grid;
+}
+#win-indicator {
+    text-align: center;
+    font-size: large;
+    font-weight: bold;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    padding: 5px;
+}
+#reset-button {
+    align-self: center;
+    margin: auto;
+    padding: 2px;
+}
 #ttt-table {
     border-collapse: collapse;
     border-style: hidden;
+    margin-block: 5px;
+    user-select: none;
 }
 .game-cell {
     width: 50px;
