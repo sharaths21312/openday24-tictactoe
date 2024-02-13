@@ -23,11 +23,9 @@ function update_display(current_state) {
  */
 function has_won(current_state) {
     for (let player of ['X', 'O']) {
-        current_state.forEach((row, i) => {
-            if (row.every(cell => cell === player)) {
-                return player; // Check rows
-            }
-        });
+        if (current_state.some(row => row.every(cell => cell === player))) {
+            return player;
+        }
         for (i = 0; i < 4; i++) {
             if (current_state.map(row => row[i]).every(cell => cell === player)) {
                 return player; // Check columns
